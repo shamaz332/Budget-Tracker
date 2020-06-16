@@ -1,5 +1,5 @@
 import React from 'react';
-import {Header,Balance,IncomeExpense,} from "./components/rapperAll/index";
+import {Header,Balance,IncomeExpense,TransSectionList,AddTranSection} from "./components/rapperAll/index";
 import './components/styles/GlobalStyles.css';
 
 function App() {
@@ -9,6 +9,8 @@ function App() {
   <div className="container">
     <Balance/>
     <IncomeExpense/>
+    <TransSectionList/>
+    <AddTranSection/>
   </div>
 </div>
   );
