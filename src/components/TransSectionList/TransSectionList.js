@@ -1,0 +1,13 @@
+import React from 'react';
+const TransSectionList = ()=> {
+    return (
+        <div>
+<h2>Expense Tracker</h2>
+</div>
+
+
+  
+    );
+}
+
+export default TransSectionList;
