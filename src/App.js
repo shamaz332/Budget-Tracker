@@ -1,10 +1,16 @@
 import React from 'react';
-import {Header,Balance,IncomeExpense,TransSectionList,AddTranSection} from "./components/rapperAll/index";
+import {Header} from "./components/Header/Header"
+import {Balance} from "./components/Balance/Balance"
+import {IncomeExpense} from "./components/IncomeExpense/IncomeExpense"
+import {TransSectionList} from "./components/TransSectionList/TransSectionList"
+import {AddTranSection} from "./components/addTranSection/addTranSection"
+import {GlobalProvider} from "./components/context/GlobalState"
 import './components/styles/GlobalStyles.css';
 
 function App() {
+  console.log("helo")
   return (
-<div>
+<GlobalProvider>
   <Header/>
   <div className="container">
     <Balance/>
@@ -12,7 +18,7 @@ function App() {
     <TransSectionList/>
     <AddTranSection/>
   </div>
-</div>
+</GlobalProvider>
   );
 }
 
