@@ -4,7 +4,7 @@ import {Balance} from "./components/Balance/Balance"
 import {IncomeExpense} from "./components/IncomeExpense/IncomeExpense"
 import {TransSectionList} from "./components/TransSectionList/TransSectionList"
 import {AddTranSection} from "./components/addTranSection/addTranSection"
-import {GlobalProvider} from "./components/context/GlobalState"
+import {GlobalProvider} from "./context/GlobalState"
 import './components/styles/GlobalStyles.css';
 
 function App() {
