@@ -1,7 +1,12 @@
 /* @import url('https://fonts.googleapis.com/css?family=Lato&display=swap'); */
 
 body{
+  background: #0F2027;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #2C5364, #203A43, #0F2027);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #2C5364, #203A43, #0F2027); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
   font-family: 'Blinker', sans-serif !important;
+  color: white;
 }
 
 :root {
@@ -42,6 +47,7 @@ h3 {
 h4 {
   margin: 0;
   text-transform: uppercase;
+  color:black
 }
 
 .income-container{
