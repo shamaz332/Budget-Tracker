@@ -11,7 +11,7 @@ export const AddTranSection = () => {
     const newTransaction = {
       id: Date.now(),
       text: text,
-      amount: parseInt(amount)
+      amount: parseFloat(amount)
     };
     addTransaction(newTransaction);
   };
@@ -26,6 +26,10 @@ export const AddTranSection = () => {
             type="text"
             value={text}
             onChange={(e) => setText(e.target.value)}
+
+
+
+
             placeholder="Enter text..."
           />
         </div>
@@ -37,9 +41,11 @@ export const AddTranSection = () => {
           <input
             type="number"
             placeholder="Enter amount..."
+            step={0.1}
             value={amount}
             onChange={(e) => setAmount(e.target.value)}
           />
+          
         </div>
         <button className="btn">Add transaction</button>
       </form>
